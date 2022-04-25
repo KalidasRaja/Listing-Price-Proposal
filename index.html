@@ -885,94 +885,29 @@
                         <input id="filterKeyword" class="form-control ng-valid ng-dirty" type="text" placeholder="Enter keyword" ng-model="searchParameters.keyword" autofocus="true" autocomplete="off" ng-change="keywordUpdated()" style="">
                     </div>
             
-                    <!-- ngIf: filterEnabled('revenue_generating') --><div ng-if="filterEnabled('revenue_generating')" class="ng-scope">
-                    <hr>
-                    <div class="d-flex align-items-center justify-content-between mb-3" ng-click="toggleFilterVisibility('revenue_generating')" style="cursor: pointer;">
-                        <div class="font-weight-bold"> Unit Size </div>
-                        <!-- ngIf: filterExpanded('revenue_generating') -->
-                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" ng-if="filterExpanded('revenue_generating')">
-                            <path d="M6.70512 0.293014L10.7072 4.293C10.9026 4.48834 11.0003 4.74411 11.0003 5C11.0003 5.25589 10.9026 5.51167 10.7072 5.707C10.3166 6.09767 9.68285 6.09767 9.29232 5.707L5.99776 2.41412L2.70309 5.707C2.31256 6.09767 1.6788 6.09767 1.28827 5.707C0.897401 5.31633 0.897401 4.68356 1.28827 4.29289L5.29029 0.292903C5.68083 -0.0976515 6.3147 -0.097652 6.70512 0.293014Z" fill="#63707E"></path>
-                        </svg><!-- end ngIf: filterExpanded('revenue_generating') -->
-                
-                        <!-- ngIf: !filterExpanded('revenue_generating') -->
-            
-                    </div>            
-            
-                    <!-- ngIf: filterExpanded('revenue_generating') -->
-                    <div class="p-1 w-100  ng-scope" ng-if="filterExpanded('revenue_generating')">
-            
-                    <div tree-checkbox="" leaves="filter_options.revenue_generating" level="0" class="ng-isolate-scope">
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                        <label id="filter[revenue_generating]-T" class="checkbox">
-                            <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)" >
-                            <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                            <span class="checkbox__control-label ml-0 ng-binding">5*5</span>
-                        </label>
-                        <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                      <label id="filter[revenue_generating]-T" class="checkbox">
-                          <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)">
-                          <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                          <span class="checkbox__control-label ml-0 ng-binding">5*10</span>
-                      </label>
-                      <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                      <label id="filter[revenue_generating]-T" class="checkbox">
-                          <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)" >
-                          <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                          <span class="checkbox__control-label ml-0 ng-binding">5*15</span>
-                      </label>
-                      <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                      <label id="filter[revenue_generating]-T" class="checkbox">
-                          <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)" >
-                          <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                          <span class="checkbox__control-label ml-0 ng-binding">10*10</span>
-                      </label>
-                      <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                      <label id="filter[revenue_generating]-T" class="checkbox">
-                          <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)" >
-                          <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                          <span class="checkbox__control-label ml-0 ng-binding">10*15</span>
-                      </label>
-                      <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <!-- ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                      <label id="filter[revenue_generating]-T" class="checkbox">
-                          <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)"  >
-                          <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                          <span class="checkbox__control-label ml-0 ng-binding">10*20</span>
-                      </label>
-                      <!-- ngIf: opt.children -->
-                    </div>
-                    <!-- end ngRepeat: opt in leaves -->
-                    <div class="ml-0" ng-repeat="opt in leaves">
-                        <label id="filter[revenue_generating]-F" class="checkbox">
-                            <input class="checkbox__input form-control ng-binding ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-bind="parentElement(opt)" ng-change="checkElement(opt)" >
-                            <span class="checkbox__control-indicator" ng-class="{'checkbox__control-indicator--indeterminate': parentClass(opt)}"></span>
-                            <span class="checkbox__control-label ml-0 ng-binding">10*30</span>
-                        </label>
-                        <!-- ngIf: opt.children -->
-                    </div><!-- end ngRepeat: opt in leaves --></div>
-            </div><!-- end ngIf: filterExpanded('revenue_generating') -->
-            
-              </div><!-- end ngIf: filterEnabled('revenue_generating') -->
+
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between mb-3" ng-click="toggleFilterVisibility('uniques_per_month')" style="cursor: pointer;">
+                      <div class="font-weight-bold"> Property Size </div>
+                        <!-- ngIf: filterExpanded('uniques_per_month') --><svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" ng-if="filterExpanded('uniques_per_month')">
+                      <path d="M6.70512 0.293014L10.7072 4.293C10.9026 4.48834 11.0003 4.74411 11.0003 5C11.0003 5.25589 10.9026 5.51167 10.7072 5.707C10.3166 6.09767 9.68285 6.09767 9.29232 5.707L5.99776 2.41412L2.70309 5.707C2.31256 6.09767 1.6788 6.09767 1.28827 5.707C0.897401 5.31633 0.897401 4.68356 1.28827 4.29289L5.29029 0.292903C5.68083 -0.0976515 6.3147 -0.097652 6.70512 0.293014Z" fill="#63707E"></path>
+                      </svg><!-- end ngIf: filterExpanded('uniques_per_month') -->
+                      
+                        <!-- ngIf: !filterExpanded('uniques_per_month') -->
+                  
+                  </div>
+              
+              
+                  <!-- ngIf: filterExpanded('uniques_per_month') -->
+                  <div class="form-group d-flex justify-content-between ng-scope" ng-if="filterExpanded('uniques_per_month')">
+                    <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Min" ng-model="searchParameters.uniques_per_month_min" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
+                    <span class="mt-2">-</span>
+                    <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Max" ng-model="searchParameters.uniques_per_month_max" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
+                  </div>
+                  <div class="form-group  justify-content-between ng-scope" ng-if="filterExpanded('uniques_per_month')">
+                    <input type="radio" id="html" name="fav_language" value="HTML">&nbsp;<label for="html">Acres</label>&nbsp;&nbsp; - &nbsp;&nbsp;
+                    <input type="radio" id="css" name="fav_language" value="CSS"> <label for="css">Square Feet</label>
+                  </div><!-- end ngIf: filterExpanded('uniques_per_month') -->
             
               <!-- ngIf: filterEnabled('asset_type') --><div ng-if="filterEnabled('asset_type')" class="ng-scope">
                 <hr>
@@ -2036,21 +1971,22 @@
               <!-- ngIf: filterEnabled('uniques_per_month') --><div ng-if="filterEnabled('uniques_per_month')" class="ng-scope">
                 <hr>
                 <div class="d-flex align-items-center justify-content-between mb-3" ng-click="toggleFilterVisibility('uniques_per_month')" style="cursor: pointer;">
-              <div class="font-weight-bold"> Monthly Users </div>
-              <!-- ngIf: filterExpanded('uniques_per_month') --><svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" ng-if="filterExpanded('uniques_per_month')">
-            <path d="M6.70512 0.293014L10.7072 4.293C10.9026 4.48834 11.0003 4.74411 11.0003 5C11.0003 5.25589 10.9026 5.51167 10.7072 5.707C10.3166 6.09767 9.68285 6.09767 9.29232 5.707L5.99776 2.41412L2.70309 5.707C2.31256 6.09767 1.6788 6.09767 1.28827 5.707C0.897401 5.31633 0.897401 4.68356 1.28827 4.29289L5.29029 0.292903C5.68083 -0.0976515 6.3147 -0.097652 6.70512 0.293014Z" fill="#63707E"></path>
-            </svg><!-- end ngIf: filterExpanded('uniques_per_month') -->
+                    <div class="font-weight-bold"> Monthly Users </div>
+                      <!-- ngIf: filterExpanded('uniques_per_month') --><svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" ng-if="filterExpanded('uniques_per_month')">
+                    <path d="M6.70512 0.293014L10.7072 4.293C10.9026 4.48834 11.0003 4.74411 11.0003 5C11.0003 5.25589 10.9026 5.51167 10.7072 5.707C10.3166 6.09767 9.68285 6.09767 9.29232 5.707L5.99776 2.41412L2.70309 5.707C2.31256 6.09767 1.6788 6.09767 1.28827 5.707C0.897401 5.31633 0.897401 4.68356 1.28827 4.29289L5.29029 0.292903C5.68083 -0.0976515 6.3147 -0.097652 6.70512 0.293014Z" fill="#63707E"></path>
+                    </svg><!-- end ngIf: filterExpanded('uniques_per_month') -->
+                    
+                      <!-- ngIf: !filterExpanded('uniques_per_month') -->
+                
+                </div>
             
-              <!-- ngIf: !filterExpanded('uniques_per_month') -->
             
-            </div>
-            
-            
-            <!-- ngIf: filterExpanded('uniques_per_month') --><div class="form-group d-flex justify-content-between ng-scope" ng-if="filterExpanded('uniques_per_month')">
-              <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Min" ng-model="searchParameters.uniques_per_month_min" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
-              <span class="mt-2">-</span>
-              <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Max" ng-model="searchParameters.uniques_per_month_max" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
-            </div><!-- end ngIf: filterExpanded('uniques_per_month') -->
+                <!-- ngIf: filterExpanded('uniques_per_month') -->
+                <div class="form-group d-flex justify-content-between ng-scope" ng-if="filterExpanded('uniques_per_month')">
+                  <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Min" ng-model="searchParameters.uniques_per_month_min" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
+                  <span class="mt-2">-</span>
+                  <input class="form-control col-5 ng-pristine ng-valid" type="text" placeholder="Max" ng-model="searchParameters.uniques_per_month_max" ng-change="filterUpdated(300)" input-format="number" empty-to-null="">
+                </div><!-- end ngIf: filterExpanded('uniques_per_month') -->
             
               </div><!-- end ngIf: filterEnabled('uniques_per_month') -->
             
