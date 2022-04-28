@@ -946,6 +946,13 @@
                     </div><!-- end ngRepeat: opt in filter_options.seller_location --><div ng-repeat="opt in filter_options.seller_location" class="ng-scope">
                       <!-- ngIf: opt.new_section -->
                       <label class="checkbox">
+                        <input class="checkbox__input form-control ng-pristine ng-valid" type="checkbox" ng-checked="opt.selected" ng-model="opt.selected" ng-change="filterUpdated()">
+                        <span class="checkbox__control-indicator"></span>
+                        <span class="checkbox__control-label ml-0 ng-binding">Iceland</span>
+                      </label>
+                    </div><!-- end ngRepeat: opt in filter_options.seller_location --><div ng-repeat="opt in filter_options.seller_location" class="ng-scope">
+                      <!-- ngIf: opt.new_section -->
+                      <label class="checkbox">
                         
                         <span class="checkbox__control-indicator"></span>
                         <span class="checkbox__control-label ml-0 ng-binding">More countries Coming Soon</span>
@@ -1472,7 +1479,7 @@
                                             <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                             <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                                 <div class="d-flex align-items-center">                              
-                                                  STORAGE & RV OF IOLA
+                                                  Removals Storage And Self Storage
                                                 </div>
                                             </a>
                                         </div>
@@ -1483,28 +1490,45 @@
                                         </div>
                                         <div class="d-none d-xl-block">
                                             <div class="text-muted">Size/acreage</div>
-                                            <div class="font-weight-bold text-truncate">9.3 Acres</div>
+                                            <div class="font-weight-bold text-truncate">19.25 Acres</div>
                                         </div>
                                         <div>
                                             <div class="text-muted">Units</div>
-                                            <div class="font-weight-bold text-truncate">102</div>
+                                            <div class="font-weight-bold text-truncate">1320</div>
                                         </div>
                                         <div>
                                             <div class="text-muted text-truncate">Contact</div>
                                             <div class="font-weight-bold text-truncate">
-                                            <span>913-707-9030</span>
+                                            <span>908-609-0541</span>
                                             </div>
                                         </div>
                                         </div>
-                                        <p class="card-text text-muted mt-2">Storage & RV of Iola is a 101-unit drive-up self-storage facility and 26-pad RV park on the entrance to the city of Iola, along US 54 Highway. The facility is mechanically gated and fenced and has an on-site management office and residence. The property has benefitted from stability and has the potential for significant expansion.</p>
+                                        <p class="card-text text-muted mt-2">The Self Storage in Devon is a 263,172 rentable square foot (including 12,400 RSF of parking) institutional portfolio consisting of 1945 Acres of properties & located in Devon, UK.</p>
+                                        <ul class="card-text text-muted mt-2">
+                                          <li>Popular, profitable and growing business</li>
+                                          <li>Excellent reputation</li>
+                                          <li>Quality business premises, professionally fitted and equipped for subject trade</li>
+                                          <li>Retirement sale</li>
+                                        </ul>
                                     </div>            
-                                    <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                        <div class="text-right">
-                                            <div class="text-nowrap_">
-                                                <span class="text-muted">Asking Price</span>
+                                    <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                          <div>
+                                            <div class="my-1">
+                                              <div class="text-nowrap_">
+                                                  <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£285,000</span>
+                                              </div>                                            
                                             </div>
-                                            <div class="lead font-weight-bold m-0 mt-2">USD $895,000</div>
-                                        </div>
+                                            <div class="my-1">
+                                              <div class="text-nowrap_">
+                                                  <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£580,000</span>
+                                              </div>                                            
+                                            </div>
+                                            <div class="my-1">
+                                              <div class="text-nowrap_">
+                                                  <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">£191,000</span>
+                                              </div>                                            
+                                            </div>
+                                          </div>
                                         <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                             <div class="ml-2 mt-lg-2 mt-xxl-0">
                                                 <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -1526,7 +1550,7 @@
                                                     <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                     </svg>            
-                                                    IOLA, KS
+                                                    Devon, UK
                                                 </span>
                                             </div>
                                         </div>
@@ -1543,13 +1567,24 @@
                               <!-- Show only on xs, sm, md -->
                                            
                                 <div class="col-12"><hr></div>            
-                                <div class="col-6">
+                                <div class="col-10">
+                                  <div class="my-1">
                                     <div class="text-nowrap_">
-                                        <span class="text-muted">Asking Price</span>
-                                    </div>
-                                    <div class="lead font-weight-bold m-0 mt-1">$895,000</div>
+                                        <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£285,000</span>
+                                    </div>                                            
+                                  </div>
+                                  <div class="my-1">
+                                    <div class="text-nowrap_">
+                                        <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£580,000</span>
+                                    </div>                                            
+                                  </div>
+                                  <div class="my-1">
+                                    <div class="text-nowrap_">
+                                        <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">£191,000</span>
+                                    </div>                                            
+                                  </div>
                                 </div>            
-                                <div class="col-6">
+                                <div class="col-2">
                                     <div class="text-right">
                                         <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                             <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -1594,7 +1629,7 @@
                                           <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                           <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                               <div class="d-flex align-items-center">                              
-                                                STORAGEOK
+                                                Storage Facility In Clayton Le Moors
                                               </div>
                                           </a>
                                       </div>
@@ -1605,28 +1640,46 @@
                                       </div>
                                       <div class="d-none d-xl-block">
                                           <div class="text-muted">Size/acreage</div>
-                                          <div class="font-weight-bold text-truncate">19.25 Acres</div>
+                                          <div class="font-weight-bold text-truncate">9.3 Acres</div>
                                       </div>
                                       <div>
                                           <div class="text-muted">Units</div>
-                                          <div class="font-weight-bold text-truncate">1320</div>
+                                          <div class="font-weight-bold text-truncate">102</div>
                                       </div>
                                       <div>
                                           <div class="text-muted text-truncate">Contact</div>
                                           <div class="font-weight-bold text-truncate">
-                                          <span>918-609-0541</span>
+                                          <span>791-112-3456</span>
                                           </div>
                                       </div>
                                       </div>
-                                      <p class="card-text text-muted mt-2">The StorageOK Portfolio is a 263,172 rentable square foot (including 12,400 RSF of parking) institutional portfolio consisting of four (4) properties and located in the Tulsa, OK, MSA, a top 55 market. The assets are currently self-managed with the capability for further expansion to capitalize on the rapid lease-up and explosion in population growth within the trade areas.</p>
+                                      <p class="card-text text-muted mt-2">Storage Facility in Lancashire Well reputed with regular and repeat trade. Situated in the town of Clayton le Moors.</p>
+                                      <ul class="card-text text-muted mt-2">
+                                        <li>Scope for further development </li>
+                                        <li>Genuine reason for sale</li>
+                                        <li>Superb trading location</li>
+                                        <li>Good level of turnover</li>
+                                        <li>Leasehold</li>
+                                      </ul>
                                   </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£350,000</span>
+                                            </div>                                            
                                           </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">Call for price</div>
-                                      </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£312,000</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                        </div>
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
                                               <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -1648,7 +1701,7 @@
                                                   <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                   </svg>            
-                                                  OKLAHOMA
+                                                  Clayton-le-Moors, Lancashire, UK
                                               </span>
                                           </div>
                                       </div>
@@ -1663,15 +1716,26 @@
                           </div>            
                           <div class="row d-lg-none">
                             <!-- Show only on xs, sm, md -->
-                                          
+                                         
                               <div class="col-12"><hr></div>            
-                              <div class="col-6">
+                              <div class="col-10">
+                                <div class="my-1">
                                   <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">Call for price</div>
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£350,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£312,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
                               </div>            
-                              <div class="col-6">
+                              <div class="col-2">
                                   <div class="text-right">
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -1687,7 +1751,7 @@
                           </div>
                           <div class="row d-lg-none mt-2">
                               <div class="col-6 d-lg-none mb-1 pr-2">
-                                             
+                                          
                             </div>
                             <div class="col-6 d-lg-none mb-1 pl-2">
                                   <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
@@ -1716,7 +1780,158 @@
                                           <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                           <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                               <div class="d-flex align-items-center">                              
-                                                1ST AVENUE STORAGE
+                                                Wales self storage
+                                              </div>
+                                          </a>
+                                      </div>
+                                      <div class="d-flex flex-nowrap justify-content-between">
+                                      <div>
+                                          <div class="text-muted">Type</div>
+                                          <div class="font-weight-bold text-truncate">Self-Storage</div>
+                                      </div>
+                                      <div class="d-none d-xl-block">
+                                          <div class="text-muted">Size/acreage</div>
+                                          <div class="font-weight-bold text-truncate">10.2 Acres</div>
+                                      </div>
+                                      <div>
+                                          <div class="text-muted">Units</div>
+                                          <div class="font-weight-bold text-truncate">1102</div>
+                                      </div>
+                                      <div>
+                                          <div class="text-muted text-truncate">Contact</div>
+                                          <div class="font-weight-bold text-truncate">
+                                          <span>904-591-0140</span>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <p class="card-text text-muted mt-2">Wales self-storage Operating in three For Sale Locations, that are secure, convenient, and cost-effective for both commercial and private clients. Commercial clients can also rent office space from the company.</p>
+                                      <ul class="card-text text-muted mt-2">
+                                        <li>Long established</li>
+                                        <li>Operates through two separate trading names</li>
+                                        <li>Superb trading location</li>
+                                        <li>Good level of turnover</li>
+                                        <li>Leasehold</li>
+                                      </ul>
+                                  </div>            
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£1M -£5M</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                        </div>
+                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
+                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
+                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
+                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
+                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
+                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
+                                              </svg>            
+                                          </div>            
+                                      </div>            
+                                  </div>
+                              </div>
+                      
+                              <div class="row d-none d-lg-flex mt-lg-2">
+                                  <div class="col">
+                                      <div class="d-flex justify-content-between align-items-end h-100">
+                                                      
+                                          <div>
+                                              <span class="text-nowrap align-self-end d-none d-xl-block mr-3">
+                                                  <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
+                                                  </svg>            
+                                                  Wales, UK
+                                              </span>
+                                          </div>
+                                      </div>
+                                  </div>            
+                                  <div class="col-auto">            
+                                      <a href="#" class="btn btn-primary text-nowrap d-sm-inline-block btn-inline-block btn-img-hover-white ml-2 GTM-search-result-card font-weight-bold">
+                                          View Listing
+                                      </a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>            
+                          <div class="row d-lg-none">
+                            <!-- Show only on xs, sm, md -->
+                                        
+                              <div class="col-12"><hr></div>            
+                              <div class="col-10">
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£1M -£5M</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
+                              </div>            
+                              <div class="col-2">
+                                  <div class="text-right">
+                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
+                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
+                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
+                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
+                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
+                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
+                                              </svg>            
+                                          </div>            
+                                      </div>            
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row d-lg-none mt-2">
+                              <div class="col-6 d-lg-none mb-1 pr-2">
+                                          
+                            </div>
+                            <div class="col-6 d-lg-none mb-1 pl-2">
+                                  <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
+                                      View Listing
+                                  </a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="listing-card card border-warning p-3 mt-3 hover-shadow my-4 py-2 cursor-pointer">
+                          <div class="row no-gutters">
+                              <div class="col-lg-3 d-lg-flex align-items-center">
+                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card">
+                                      <img class="card-img img-listing-screenshot" onerror="this.setAttribute('src', 'https://d1zazrti94enmy.cloudfront.net/assets/search/placeholders/content-7ca6a9c82f989d2ebb3c782ac750f416e4e2adb662a2035a741d86207268ded2.svg')" loading="lazy" src="https://d2jafhvbn4akdi.cloudfront.net/webp_4d406d96-394d-4a9f-a310-8c217da53d57.jpg" alt="Content">
+                                  </a>
+                              </div>
+                              <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
+                              <div class="col-lg-9 px-lg-3 d-flex flex-column justify-content-between">
+                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
+                              <div class="row">
+                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
+                                  <div class="col-lg-9">
+                                    <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
+                                      <div class="lead font-weight-bold card-title text-truncate pt-2 pt-lg-0">
+                                          <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
+                                          <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
+                                              <div class="d-flex align-items-center">                              
+                                                Cubesmart self storage
                                               </div>
                                           </a>
                                       </div>
@@ -1740,15 +1955,32 @@
                                           </div>
                                       </div>
                                       </div>
-                                      <p class="card-text text-muted mt-2">1st Avenue Storage is situated in the southeast part of Greeley, CO in close proximity to the I-34 and I-85 interchange. The 4.956-acre property features a total of 15,053 SF of storage; allocated with temperature controlled and drive up self-storage, along with surface and canopied RV parking.</p>
+                                      <p class="card-text text-muted mt-2">Rare opportunity to acquire a newly built, value-add, CubeSmart-managed property located in one of the most sought-after markets in the country. The facility contains 560 units and 56,685 rentable square feet, within a 3-story climate-controlled building.</p>
+                                      <ul class="card-text text-muted mt-2">
+                                        <li>Early viewing is essential to fully appreciate</li>
+                                        <li>Genuine reason for sale due to retirement</li>
+                                        <li>Excellent road links</li>
+                                        <li>Leasehold</li>
+                                      </ul>
                                   </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£424,000</span>
+                                            </div>                                            
                                           </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">USD $4,200,000</div>
-                                      </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£424,000</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                        </div>
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
                                               <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -1770,7 +2002,7 @@
                                                   <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                   </svg>            
-                                                  GREELEY, CO 
+                                                  Cheshire, UK
                                               </span>
                                           </div>
                                       </div>
@@ -1784,15 +2016,27 @@
                             </div>
                           </div>            
                           <div class="row d-lg-none">
-                            <!-- Show only on xs, sm, md -->                                       
+                            <!-- Show only on xs, sm, md -->
+                                        
                               <div class="col-12"><hr></div>            
-                              <div class="col-6">
+                              <div class="col-10">
+                                <div class="my-1">
                                   <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$4,200,000</div>
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£424,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£424,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
                               </div>            
-                              <div class="col-6">
+                              <div class="col-2">
                                   <div class="text-right">
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -1808,7 +2052,7 @@
                           </div>
                           <div class="row d-lg-none mt-2">
                               <div class="col-6 d-lg-none mb-1 pr-2">
-                                            
+                                          
                             </div>
                             <div class="col-6 d-lg-none mb-1 pl-2">
                                   <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
@@ -1837,7 +2081,7 @@
                                           <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                           <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                               <div class="d-flex align-items-center">                              
-                                                CUBESMART SELF STORAGE WORLD GOLF VILLAGE
+                                                1st Avenue Storage
                                               </div>
                                           </a>
                                       </div>
@@ -1861,15 +2105,31 @@
                                           </div>
                                       </div>
                                       </div>
-                                      <p class="card-text text-muted mt-2">Rare opportunity to acquire a newly built, value-add, CubeSmart-managed property located in one of the most sought-after markets in the country. The facility contains 560 units and 56,685 rentable square feet, within a 3-story climate-controlled building. Due to the high barrier to entry in the market, the closest competitor to this site is over 4.5 miles away with only one other project currently under construction in the trade area (2.14 miles away).</p>
+                                      <p class="card-text text-muted mt-2">STORAGE ROOMS in Huddersfield, It Suite of large first-floor storage rooms to let in this popular village, approximately one mile west of Huddersfield town centre. These are ideal archive stores or general storage facilities for goods capable of being stored at first floor via a single door and staircase.</p>
+                                      <ul class="card-text text-muted mt-2">
+                                        <li>Early viewing is essential to fully appreciate</li>
+                                        <li>Genuine reason for sale due to retirement</li>
+                                        <li>Excellent road links</li>
+                                      </ul>
                                   </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
                                           </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">Call for price</div>
-                                      </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£580,000</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                        </div>
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
                                               <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -1891,7 +2151,7 @@
                                                   <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                   </svg>            
-                                                  ST. AUGUSTINE, FL
+                                                  Huddersfield, West Yorkshire, UK
                                               </span>
                                           </div>
                                       </div>
@@ -1906,15 +2166,26 @@
                           </div>            
                           <div class="row d-lg-none">
                             <!-- Show only on xs, sm, md -->
-                                       
+                                        
                               <div class="col-12"><hr></div>            
-                              <div class="col-6">
+                              <div class="col-10">
+                                <div class="my-1">
                                   <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">Call for price</div>
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">£580,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
                               </div>            
-                              <div class="col-6">
+                              <div class="col-2">
                                   <div class="text-right">
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -1930,7 +2201,7 @@
                           </div>
                           <div class="row d-lg-none mt-2">
                               <div class="col-6 d-lg-none mb-1 pr-2">
-                                            
+                                          
                             </div>
                             <div class="col-6 d-lg-none mb-1 pl-2">
                                   <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
@@ -1959,7 +2230,7 @@
                                           <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                           <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                               <div class="d-flex align-items-center">                              
-                                                MALVERN SELF STORAGE
+                                                Malvern Self storage
                                               </div>
                                           </a>
                                       </div>
@@ -1983,15 +2254,32 @@
                                           </div>
                                       </div>
                                       </div>
-                                      <p class="card-text text-muted mt-2">Opened in September 2021, Malvern Self Storage is a 54,138 SF climate-controlled conversion, with additional land suited for additional conventional drive-up storage. The facility is the only climate-controlled facility in Malvern and has outstanding curb appeal. Phase I consisted of 22,867 RSF and is completed. Phase II is planned for an additional 10,500 RSF and potentially converting the approx. 3,600 RSF office area. Conventional drive-up storage can be added to the adjacent land to the south of the building.</p>
+                                      <p class="card-text text-muted mt-2">Opened in September 2021, Malvern Self Storage is a 54,138 SF climate-controlled conversion, with additional land suited for additional conventional drive-up storage. The facility is the only climate-controlled facility in Malvern and has outstanding curb appeal.</p>
+                                      <ul class="card-text text-muted mt-2">
+                                        <li>Popular, profitable and growing business</li>
+                                        <li>Excellent reputation</li>
+                                        <li>Superb trading location</li>
+                                        <li>Good level of turnover</li>
+                                      </ul>
                                   </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£2,750,000</span>
+                                            </div>                                            
                                           </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">$3,580,000</div>
-                                      </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
+                                          </div>
+                                        </div>
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
                                               <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -2013,7 +2301,7 @@
                                                   <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                   </svg>            
-                                                  MALVERN, AR
+                                                  Gloucestershire, UK
                                               </span>
                                           </div>
                                       </div>
@@ -2028,15 +2316,26 @@
                           </div>            
                           <div class="row d-lg-none">
                             <!-- Show only on xs, sm, md -->
-                                         
+                                        
                               <div class="col-12"><hr></div>            
-                              <div class="col-6">
+                              <div class="col-10">
+                                <div class="my-1">
                                   <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$3,580,000</div>
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£2,750,000</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
                               </div>            
-                              <div class="col-6">
+                              <div class="col-2">
                                   <div class="text-right">
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -2052,7 +2351,7 @@
                           </div>
                           <div class="row d-lg-none mt-2">
                               <div class="col-6 d-lg-none mb-1 pr-2">
-                                            
+                                          
                             </div>
                             <div class="col-6 d-lg-none mb-1 pl-2">
                                   <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
@@ -2081,7 +2380,7 @@
                                           <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
                                           <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
                                               <div class="d-flex align-items-center">                              
-                                                QUALITY STORAGE
+                                                Quality Storage
                                               </div>
                                           </a>
                                       </div>
@@ -2101,140 +2400,31 @@
                                       <div>
                                           <div class="text-muted text-truncate">Contact</div>
                                           <div class="font-weight-bold text-truncate">
-                                          <span>(612) 790-3747</span>
+                                          <span>612 790-3747</span>
                                           </div>
                                       </div>
                                       </div>
-                                      <p class="card-text text-muted mt-2">Quality Storage in Cannon Falls is a fantastic opportunity for an investor to own a well-performing self storage facility with the ability to add value through improved operations and expansion. The property includes 25,384 rentable square feet of drive up storage, 2,746 rentable square feet of climate controlled space, outdoor parking, an office and a billboard.</p>
+                                      <p class="card-text text-muted mt-2">The business for sale specialises in keeping belongings safe. Customer-focused and highly reliable, the company work to provide professional and friendly service every time. Whether a client requires transport, logistics, removals or storage, the business promise to make the process as efficient as possible.</p>
+                                      
                                   </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
+                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between py-lg-4 px-2 align-items-end">
+                                        <div>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£349,950</span>
+                                            </div>                                            
                                           </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">USD $2,200,000</div>
-                                      </div>
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                      
-                              <div class="row d-none d-lg-flex mt-lg-2">
-                                  <div class="col">
-                                      <div class="d-flex justify-content-between align-items-end h-100">                                                      
-                                          <div>
-                                              <span class="text-nowrap align-self-end d-none d-xl-block mr-3">
-                                                  <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
-                                                  </svg>            
-                                                  CANNON FALLS, MN
-                                              </span>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                            </div>                                            
                                           </div>
-                                      </div>
-                                  </div>            
-                                  <div class="col-auto">            
-                                      <a href="#" class="btn btn-primary text-nowrap d-sm-inline-block btn-inline-block btn-img-hover-white ml-2 GTM-search-result-card font-weight-bold">
-                                          View Listing
-                                      </a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>            
-                          <div class="row d-lg-none">
-                            <!-- Show only on xs, sm, md -->
-                                  
-                              <div class="col-12"><hr></div>            
-                              <div class="col-6">
-                                  <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$2,200,000</div>
-                              </div>            
-                              <div class="col-6">
-                                  <div class="text-right">
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row d-lg-none mt-2">
-                              <div class="col-6 d-lg-none mb-1 pr-2">
-                                           
-                            </div>
-                            <div class="col-6 d-lg-none mb-1 pl-2">
-                                  <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
-                                      View Listing
-                                  </a>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="listing-card card border-warning p-3 mt-3 hover-shadow my-4 py-2 cursor-pointer">
-                          <div class="row no-gutters">
-                              <div class="col-lg-3 d-lg-flex align-items-center">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card">
-                                      <img class="card-img img-listing-screenshot" onerror="this.setAttribute('src', 'https://d1zazrti94enmy.cloudfront.net/assets/search/placeholders/content-7ca6a9c82f989d2ebb3c782ac750f416e4e2adb662a2035a741d86207268ded2.svg')" loading="lazy" src="https://d2jafhvbn4akdi.cloudfront.net/webp_4d406d96-394d-4a9f-a310-8c217da53d57.jpg" alt="Content">
-                                  </a>
-                              </div>
-                              <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="col-lg-9 px-lg-3 d-flex flex-column justify-content-between">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="row">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                  <div class="col-lg-9">
-                                    <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                      <div class="lead font-weight-bold card-title text-truncate pt-2 pt-lg-0">
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
-                                              <div class="d-flex align-items-center">                              
-                                                KO STORAGE OF ALEXANDRIA
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="d-flex flex-nowrap justify-content-between">
-                                      <div>
-                                          <div class="text-muted">Type</div>
-                                          <div class="font-weight-bold text-truncate">Self-Storage</div>
-                                      </div>
-                                      <div class="d-none d-xl-block">
-                                          <div class="text-muted">Size/acreage</div>
-                                          <div class="font-weight-bold text-truncate">22.19 Acres</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted">Units</div>
-                                          <div class="font-weight-bold text-truncate">264</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted text-truncate">Contact</div>
-                                          <div class="font-weight-bold text-truncate">
-                                          <span>612-790-3747</span>
+                                          <div class="my-1">
+                                            <div class="text-nowrap_">
+                                                <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">£72,438</span>
+                                            </div>                                            
                                           </div>
-                                      </div>
-                                      </div>
-                                      <p class="card-text text-muted mt-2">KO Storage of Alexandria is a great opportunity to own two well-performing self storage facilities in the growing city of Alexandria, Minnesota. Both locations are paved and equipped with security cameras. The offering includes a billboard producing $7,000 of revenue per year on a long term lease to Lamar.</p>
-                                  </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
-                                          </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">USD $3,500,0000</div>
-                                      </div>
+                                        </div>
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
                                               <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
@@ -2256,7 +2446,7 @@
                                                   <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
                                                   </svg>            
-                                                  ALEXANDRIA, MN
+                                                  Essex, UK
                                               </span>
                                           </div>
                                       </div>
@@ -2271,15 +2461,26 @@
                           </div>            
                           <div class="row d-lg-none">
                             <!-- Show only on xs, sm, md -->
-                                         
+                                        
                               <div class="col-12"><hr></div>            
-                              <div class="col-6">
+                              <div class="col-10">
+                                <div class="my-1">
                                   <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$3,500,000</div>
+                                      <span class="text-muted">Asking Price : </span><span class="font-weight-bold m-0 mt-2">£349,950</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Turnover : </span><span class="font-weight-bold m-0 mt-2">On request</span>
+                                  </div>                                            
+                                </div>
+                                <div class="my-1">
+                                  <div class="text-nowrap_">
+                                      <span class="text-muted">Net Profit : </span><span class="font-weight-bold m-0 mt-2">£72,438</span>
+                                  </div>                                            
+                                </div>
                               </div>            
-                              <div class="col-6">
+                              <div class="col-2">
                                   <div class="text-right">
                                       <div class="d-flex flex-wrap justify-content-end mb-lg-2">
                                           <div class="ml-2 mt-lg-2 mt-xxl-0">
@@ -2295,373 +2496,7 @@
                           </div>
                           <div class="row d-lg-none mt-2">
                               <div class="col-6 d-lg-none mb-1 pr-2">
-                                             
-                            </div>
-                            <div class="col-6 d-lg-none mb-1 pl-2">
-                                  <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
-                                      View Listing
-                                  </a>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="listing-card card border-warning p-3 mt-3 hover-shadow my-4 py-2 cursor-pointer">
-                          <div class="row no-gutters">
-                              <div class="col-lg-3 d-lg-flex align-items-center">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card">
-                                      <img class="card-img img-listing-screenshot" onerror="this.setAttribute('src', 'https://d1zazrti94enmy.cloudfront.net/assets/search/placeholders/content-7ca6a9c82f989d2ebb3c782ac750f416e4e2adb662a2035a741d86207268ded2.svg')" loading="lazy" src="https://d2jafhvbn4akdi.cloudfront.net/webp_4d406d96-394d-4a9f-a310-8c217da53d57.jpg" alt="Content">
-                                  </a>
-                              </div>
-                              <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="col-lg-9 px-lg-3 d-flex flex-column justify-content-between">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="row">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                  <div class="col-lg-9">
-                                    <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                      <div class="lead font-weight-bold card-title text-truncate pt-2 pt-lg-0">
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
-                                              <div class="d-flex align-items-center">                              
-                                                WATERGLEN SELF STORAGE
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="d-flex flex-nowrap justify-content-between">
-                                      <div>
-                                          <div class="text-muted">Type</div>
-                                          <div class="font-weight-bold text-truncate">Self-Storage</div>
-                                      </div>
-                                      <div class="d-none d-xl-block">
-                                          <div class="text-muted">Size/acreage</div>
-                                          <div class="font-weight-bold text-truncate">3.4 Acres</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted">Units</div>
-                                          <div class="font-weight-bold text-truncate">211</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted text-truncate">Contact</div>
-                                          <div class="font-weight-bold text-truncate">
-                                          <span>720-855-6587</span>
-                                          </div>
-                                      </div>
-                                      </div>
-                                      <p class="card-text text-muted mt-2">Waterglen Self Storage is located at 1202 Waterglen Drive in Fort Collins, CO. Nestled in a large residential area, the 32,950 GSF project is metal construction with brick trim, Janus Doors and concrete drives. There are 211 ambient drive-up units of varying sizes throughout the facility with a welcoming 900 SF office, built-in reception desk, large display area, and tenant restroom. The site is 3.4 acres and is triangular shaped.</p>
-                                  </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
-                                          </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">Call for price</div>
-                                      </div>
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                      
-                              <div class="row d-none d-lg-flex mt-lg-2">
-                                  <div class="col">
-                                      <div class="d-flex justify-content-between align-items-end h-100">
-                                                      
-                                          <div>
-                                              <span class="text-nowrap align-self-end d-none d-xl-block mr-3">
-                                                  <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
-                                                  </svg>            
-                                                  FORT COLLINS, CO
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>            
-                                  <div class="col-auto">            
-                                      <a href="#" class="btn btn-primary text-nowrap d-sm-inline-block btn-inline-block btn-img-hover-white ml-2 GTM-search-result-card font-weight-bold">
-                                          View Listing
-                                      </a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>            
-                          <div class="row d-lg-none">
-                            <!-- Show only on xs, sm, md -->
-                                    
-                              <div class="col-12"><hr></div>            
-                              <div class="col-6">
-                                  <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">Call for price</div>
-                              </div>            
-                              <div class="col-6">
-                                  <div class="text-right">
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row d-lg-none mt-2">
-                              <div class="col-6 d-lg-none mb-1 pr-2">
-                                             
-                            </div>
-                            <div class="col-6 d-lg-none mb-1 pl-2">
-                                  <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
-                                      View Listing
-                                  </a>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="listing-card card border-warning p-3 mt-3 hover-shadow my-4 py-2 cursor-pointer">
-                          <div class="row no-gutters">
-                              <div class="col-lg-3 d-lg-flex align-items-center">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card">
-                                      <img class="card-img img-listing-screenshot" onerror="this.setAttribute('src', 'https://d1zazrti94enmy.cloudfront.net/assets/search/placeholders/content-7ca6a9c82f989d2ebb3c782ac750f416e4e2adb662a2035a741d86207268ded2.svg')" loading="lazy" src="https://d2jafhvbn4akdi.cloudfront.net/webp_4d406d96-394d-4a9f-a310-8c217da53d57.jpg" alt="Content">
-                                  </a>
-                              </div>
-                              <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="col-lg-9 px-lg-3 d-flex flex-column justify-content-between">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="row">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                  <div class="col-lg-9">
-                                    <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                      <div class="lead font-weight-bold card-title text-truncate pt-2 pt-lg-0">
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
-                                              <div class="d-flex align-items-center">                              
-                                                A&A MINI STORAGE
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="d-flex flex-nowrap justify-content-between">
-                                      <div>
-                                          <div class="text-muted">Type</div>
-                                          <div class="font-weight-bold text-truncate">Self-Storage</div>
-                                      </div>
-                                      <div class="d-none d-xl-block">
-                                          <div class="text-muted">Size/acreage</div>
-                                          <div class="font-weight-bold text-truncate">24,270 RSF</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted">Units</div>
-                                          <div class="font-weight-bold text-truncate">233</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted text-truncate">Contact</div>
-                                          <div class="font-weight-bold text-truncate">
-                                          <span>904-591-0140</span>
-                                          </div>
-                                      </div>
-                                      </div>
-                                      <p class="card-text text-muted mt-2">A&A Mini Storage is centrally located to the city of Live Oak along the east side of the city. It has proximity to HWY 90 and is located at the busiest intersection in the city. The property is in a well-established commercial district and has excellent drainage and easy access from 4 separate entrances. All the buildings are constructed of steel and were built in phases from 2004 to 2020. The property is on 2.5 acres with additional room for expansion of roughly 10,200 GRSF with a mix of climate & non-climate controlled storage units. Owner will begin construction of additional square footage in the near future. Any cost incurred during the construction process shall be passed along to new buyer.</p>
-                                  </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
-                                          </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">USD $4,250,000</div>
-                                      </div>
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                      
-                              <div class="row d-none d-lg-flex mt-lg-2">
-                                  <div class="col">
-                                      <div class="d-flex justify-content-between align-items-end h-100">
-                                                      
-                                          <div>
-                                              <span class="text-nowrap align-self-end d-none d-xl-block mr-3">
-                                                  <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
-                                                  </svg>            
-                                                  LIVE OAK, FL
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>            
-                                  <div class="col-auto">            
-                                      <a href="#" class="btn btn-primary text-nowrap d-sm-inline-block btn-inline-block btn-img-hover-white ml-2 GTM-search-result-card font-weight-bold">
-                                          View Listing
-                                      </a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>            
-                          <div class="row d-lg-none">
-                            <!-- Show only on xs, sm, md -->
-                                         
-                              <div class="col-12"><hr></div>            
-                              <div class="col-6">
-                                  <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$4,250,000</div>
-                              </div>            
-                              <div class="col-6">
-                                  <div class="text-right">
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row d-lg-none mt-2">
-                              <div class="col-6 d-lg-none mb-1 pr-2">
-                                             
-                            </div>
-                            <div class="col-6 d-lg-none mb-1 pl-2">
-                                  <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
-                                      View Listing
-                                  </a>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="listing-card card border-warning p-3 mt-3 hover-shadow my-4 py-2 cursor-pointer">
-                          <div class="row no-gutters">
-                              <div class="col-lg-3 d-lg-flex align-items-center">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card">
-                                      <img class="card-img img-listing-screenshot" onerror="this.setAttribute('src', 'https://d1zazrti94enmy.cloudfront.net/assets/search/placeholders/content-7ca6a9c82f989d2ebb3c782ac750f416e4e2adb662a2035a741d86207268ded2.svg')" loading="lazy" src="https://d2jafhvbn4akdi.cloudfront.net/webp_4d406d96-394d-4a9f-a310-8c217da53d57.jpg" alt="Content">
-                                  </a>
-                              </div>
-                              <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="col-lg-9 px-lg-3 d-flex flex-column justify-content-between">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                              <div class="row">
-                                  <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                  <div class="col-lg-9">
-                                    <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                      <div class="lead font-weight-bold card-title text-truncate pt-2 pt-lg-0">
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link GTM-search-result-card"></a>
-                                          <a href="#" class="card-title btn-link-unstyled stretched-link text-truncate GTM-search-result-card">
-                                              <div class="d-flex align-items-center">                              
-                                                SOUTHSIDE STORAGE
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="d-flex flex-nowrap justify-content-between">
-                                      <div>
-                                          <div class="text-muted">Type</div>
-                                          <div class="font-weight-bold text-truncate">Self-Storage</div>
-                                      </div>
-                                      <div class="d-none d-xl-block">
-                                          <div class="text-muted">Size/acreage</div>
-                                          <div class="font-weight-bold text-truncate">74 Acre</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted">Units</div>
-                                          <div class="font-weight-bold text-truncate">64</div>
-                                      </div>
-                                      <div>
-                                          <div class="text-muted text-truncate">Contact</div>
-                                          <div class="font-weight-bold text-truncate">
-                                          <span>(612) 790-3747</span>
-                                          </div>
-                                      </div>
-                                      </div>
-                                      <p class="card-text text-muted mt-2">Southside Storage in Madison, MN offers investors a great opportunity to own a fully occupied self storage business with no immediate competition. With two locations in Madison, Southside Storage is well-established in the market providing 64 units totaling 11,504 rentable square feet of drive-up self storage. This offering is priced below the cost to build and provides a great opportunity for an entrepreneur to improve operations to create long term value.</p>
-                                  </div>            
-                                  <div class="col-lg-3 d-none d-lg-flex flex-column justify-content-between align-items-end">
-                                      <div class="text-right">
-                                          <div class="text-nowrap_">
-                                              <span class="text-muted">Asking Price</span>
-                                          </div>
-                                          <div class="lead font-weight-bold m-0 mt-2">USD $425,000</div>
-                                      </div>
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                      
-                              <div class="row d-none d-lg-flex mt-lg-2">
-                                  <div class="col">
-                                      <div class="d-flex justify-content-between align-items-end h-100">
-                                                      
-                                          <div>
-                                              <span class="text-nowrap align-self-end d-none d-xl-block mr-3">
-                                                  <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.14153C0 2.74978 2.82074 0 6.3 0C9.77926 0 12.6 2.74978 12.6 6.14153C12.6 10.2747 6.3 18 6.3 18C6.3 18 0 10.2842 0 6.14153ZM3.84961 6.14142C3.84961 7.46103 4.94676 8.53012 6.29972 8.53012C7.65267 8.53012 8.74982 7.4608 8.74982 6.14142C8.74982 4.82226 7.65291 3.75317 6.29972 3.75317C4.94652 3.75317 3.84961 4.82249 3.84961 6.14142Z" fill="#AEB8C2"></path>
-                                                  </svg>            
-                                                  MADISON, MN
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>            
-                                  <div class="col-auto">            
-                                      <a href="#" class="btn btn-primary text-nowrap d-sm-inline-block btn-inline-block btn-img-hover-white ml-2 GTM-search-result-card font-weight-bold">
-                                          View Listing
-                                      </a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>            
-                          <div class="row d-lg-none">
-                            <!-- Show only on xs, sm, md -->
-                                         
-                              <div class="col-12"><hr></div>            
-                              <div class="col-6">
-                                  <div class="text-nowrap_">
-                                      <span class="text-muted">Asking Price</span>
-                                  </div>
-                                  <div class="lead font-weight-bold m-0 mt-1">$425,000</div>
-                              </div>            
-                              <div class="col-6">
-                                  <div class="text-right">
-                                      <div class="d-flex flex-wrap justify-content-end mb-lg-2">
-                                          <div class="ml-2 mt-lg-2 mt-xxl-0">
-                                              <svg width="16" height="18" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg" title="Traffic is verified via Google Analytics" rel="tooltip">
-                                                  <path d="M25.3335 4.77273V34.7727C25.3335 38.1295 27.6494 40 30.1062 40C32.379 40 34.879 38.4091 34.879 34.7727V5C34.879 1.92273 32.6063 0 30.1062 0C27.6062 0 25.3335 2.12045 25.3335 4.77273Z" fill="#F9AB00"></path>
-                                                  <path d="M12.8335 20V34.7727C12.8335 38.1296 15.1494 40 17.6062 40C19.879 40 22.379 38.4091 22.379 34.7727V20.2273C22.379 17.15 20.1063 15.2273 17.6062 15.2273C15.1062 15.2273 12.8335 17.3477 12.8335 20Z" fill="#E37400"></path>
-                                                  <path d="M5.10625 40C7.74216 40 9.879 37.8632 9.879 35.2273C9.879 32.5914 7.74216 30.4545 5.10625 30.4545C2.47033 30.4545 0.333496 32.5914 0.333496 35.2273C0.333496 37.8632 2.47033 40 5.10625 40Z" fill="#E37400"></path>
-                                              </svg>            
-                                          </div>            
-                                      </div>            
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row d-lg-none mt-2">
-                              <div class="col-6 d-lg-none mb-1 pr-2">
-                                            
+                                          
                             </div>
                             <div class="col-6 d-lg-none mb-1 pl-2">
                                   <a href="/11152402" class="btn btn-primary text-nowrap btn-block btn-img-hover-white GTM-search-result-card font-weight-bold">
